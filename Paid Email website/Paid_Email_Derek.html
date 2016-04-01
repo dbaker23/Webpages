@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<!--Head of the page, top stuff + styles-->
+  <head>
+    <style>
+      table {
+      	width: 580px;
+        max-width: 580px;
+        font-size: 16px;
+      }
+
+      body {
+        font-family: Roboto, Sans-Serif;
+
+      }
+
+      table.Head {
+        border-style: none;
+        border-radius: 6px;
+      }
+
+      tr.HeadPics {
+        padding-left: 20px;
+        padding-top: 20px;
+      }
+
+      img.Thanks {
+        padding-top: 15px;
+        width: 100%;
+      }
+
+      div.Green {
+        text-align: left;
+        padding-top: 0px;
+        background-color: #A1CE58;
+        height: 86px;
+        max-height: 86px;
+        }
+
+        #green {
+          background-color: #a1ce58;
+          width: 100%;
+        }
+
+    </style>
+  </head>
+
+  <body>
+  	<table class="Head">
+      <tr class="HeadPics">
+        <!--epelican logo-->
+        <a target="_blank" href="{{store url=""}}"><img src="{{media url=""}}wysiwyg/email/ePelican-logo.png" alt="{{var logo_alt}}" />
+        <!--help center-->
+        <a target="_blank" href="http://support.epelican.com/hc/en-us"><img src="{{media url=""}}wysiwyg/email/help-center-button.png" />
+      </tr>
+
+      <tr>
+        <!--thank you banner-->
+        <img class="Thanks" src="{{media url=""}}wysiwyg/banner-thanksyou-rounded-corners.png" alt=" ">
+      </tr>
+      
+      <tr>
+        <!--green order top-->
+        <table id="green">
+            <tbody>
+                <tr>
+                    <td align="left">
+                        <p style="margin:0;padding:10px 0 10px 30px;">Order #: <b>{{var order.increment_id}}</b> </p>
+                    </td>
+                    <td align="right"><span style="margin:0;padding:10px 30px 10px 0;">Placed on: <b>{{var order.getCreatedAtFormatedHideTime('short')}}</b></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+      </tr>
+  	</table>
+
+  	<table class="Middle">
+  	</table>
+
+  	<table class="Foot">
+  	</table>
+  </body>
+</html>

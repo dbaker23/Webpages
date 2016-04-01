@@ -1,0 +1,128 @@
+<body style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:15px; margin:0; padding:0;">
+  <center>
+    <div style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:15px; margin:0 auto; padding:0; max-width:600px;">
+        <table bgcolor="#FFFFFF" cellspacing="0" cellpadding="0" border="0" style="border-radius:6px;" width="600" align="center">
+            <tr>
+                <td>
+                    <table cellspacing="0" cellpadding="0" border="0" width="580">
+                        <tr>
+                            <td align="center" valign="top" style="text-align:left;">
+                                <table bgcolor="#FFFFFF" cellspacing="0" cellpadding="0" border="0" style="border:none;padding-top:20px;"  width="580">
+                                    <!-- [ header starts here] -->
+                                    <tr>
+                                        <td style=" padding-left:0px; padding-right:40px;padding-top:0;padding-bottom:0;" valign="top">
+                                            <a target="_blank" href="{{store url=""}}"><img src="{{media url=""}}wysiwyg/email/ePelican-logo.png" alt="{{var logo_alt}}" style="padding-left:10px;" border="0" />
+                                            </a>
+                                        </td>
+                                        <td align="right" style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:right;">
+                                            <a target="_blank" href="http://support.epelican.com/hc/en-us"><img src="{{media url=""}}wysiwyg/email/help-center-button.png" border="0" />
+                                            </a>
+                                        </td>
+                                    </tr>
+                       
+                        </table>
+                        </td>
+            </tr>
+
+
+            <!--Thank you banner header-->
+            <tr>
+                <td style="padding-top:15px;padding-left:0;padding-bottom:0;padding-right:0;font-size:17px;" >
+
+                    <div id="welcome" style="heigt:86px;max-height:86px;width:100%;">
+                        <img src="{{media url=""}}wysiwyg/banner-thanksyou-rounded-corners.png" width="100%"  alt=" ">
+                    </div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td  bgcolor="#a1ce58" style="padding:0;">
+                    <table bgcolor="#a1ce58" width="580">
+                        <tbody>
+                            <tr>
+                                <td align="left">
+                                    <p style="margin:0;padding:10px 0 10px 30px;">Order #: <b>{{var order.increment_id}}</b> </p>
+                                </td>
+                                <td align="right"><span style="margin:0;padding:10px 30px 10px 0;">Placed on: <b>{{var order.getCreatedAtFormatedHideTime('short')}}</b></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            
+
+            <!-- Middle part of the message -->
+            <tr>
+                <!--paypal logo-->
+                <td style= "padding: 40px 30px  0px 30px;font-family: Roboto Regular,Sans-serif;margin:0;font-size:16px; line-height: 25px;border-right:1px solid #d0d0d0;border-left:1px solid #d0d0d0;">
+                    <p style="padding-bottom:20px; margin:0;text-align:left;"><img src="{{media url=""}}wysiwyg/icon-paypal.png">
+                
+                <!--paypal text-->
+                    <b style="padding-left: 30px">PayPal</b> - expect your money within 1 business day.</p>
+                </td>
+            </tr>
+            
+            <tr>
+                <!--check logo-->
+                 <td style= "padding: 20px 30px  40px 30px;font-family: Roboto Regular,Sans-serif;margin:0;font-size:16px; line-height: 25px;border-right:1px solid #d0d0d0;border-left:1px solid #d0d0d0;">
+                    <p style="margin:0;text-align:left;"><img src="{{media url""}}wysiwyg/icon-check.jpg">
+
+                <!--check text-->    
+                    <b style="padding-left: 18px;">Standard Bank Check</b> - Expect your check within 1-3 <span style="padding-left: 135px;">business days depending on your location via USPS <span style="padding-left: 135px;">Priority Mail. The check will be coming from our <span style="padding-left: 135px;"> offices in California.</p></span></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td  style="padding:0;"> {{layout handle="sales_email_order_items" order=$order}}</td>
+            </tr>
+            <tr>
+               <td width="580" valign="middle" style="background-color: #365363;padding:0; border-bottom-left-radius: 8px;  padding: 10px 0 10px 15px;   border-bottom-right-radius: 8px;">
+                                <p style="color: #FFFFFF;   padding: 10px 0 10px 15px;  text-align:left;   font-family: Verdana,Arial,Helvetica,sans-serif;    font-size: 12px;    font-weight:normal;    margin: 0;   ">Contact us from 9 - 4 PM PST Mon -Fri at: <a target="_blank" style="text-decoration:none;color:#a2cd57;" href="tel:9493972955">949-397-2955 </a> or <a target="_blank" style="text-decoration:none;color:#a2cd57;" href="mailto:support@ePelican.com">support@ePelican.com.</a>
+                                </p>
+                            </td>
+            </tr>
+
+
+            <!--Jem jem footer banner-->
+            <tr>
+                <td style="padding-top:10px;padding-left:0;padding-bottom:100px;padding-right:0;font-size:17px;" >
+                <div id="welcome" style="heigt:86px;max-height:86px;width:100%;">
+                   <a href = "http://jemjem.com"><img src="{{media url=""}}wysiwyg/jemjembanner_crosspromo-2.jpg" width="100%"  alt=" "></a>
+                </div>
+                </td>
+            </tr>
+            <!--End jj footer banner-->
+
+            </table>
+            </td>
+            </tr>
+
+            <!--[footer starts here]-->
+            <tr class="templatefooter">
+                <td colspan="1" style="padding:10px 30px 0px 0px;" align="center">
+                    &nbsp;&nbsp;<a style="text-decoration:none;text-underline:none;color:#497185;font-size:13px;" href="https://www.epelican.com/about-us/" target="_blank"><span >About Us</span></a>&nbsp;&nbsp;
+                    <a style="font-size: 13px;text-decoration:none;text-underline:none; color:#497185;" href=" https://www.epelican.com/contacts/" target="_blank"><span >Contact Us</span></a>&nbsp;&nbsp;
+                    <a style="font-size: 13px;text-decoration:none;text-underline:none; color:#497185;" href="https://www.epelican.com/terms-and-conditions/" target="_blank"><span>Terms and Conditions</span></a>&nbsp;&nbsp;
+                    <a style="font-size: 13px;text-decoration:none;text-underline:none; color:#497185;" href="https://www.epelican.com/privacy-policy/" target="_blank"><span >Privacy Policy</span></a>&nbsp;&nbsp;
+                    <a style="font-size: 13px;text-decoration:none;text-underline:none; color:#497185;" href="https://www.epelican.com/faq/" target="_blank"><span >FAQ</span></a>&nbsp;&nbsp;
+                    <a style="font-size: 13px;text-decoration:none;text-underline:none; color:#497185;" href="https://www.epelican.com/blog/" target="_blank"><span >Blog</span></a>&nbsp;&nbsp;
+            </tr>
+            <tr>
+                <td colspan="1" style="padding-top:25px;" align="center">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" title="facebook" href="https://www.facebook.com/ePelican"><span><img src="{{media url=""}}wysiwyg/email/logo-facebook.png"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a target="_blank" title="twitter" href="https://twitter.com/ePelican_"><span><img src="{{media url=""}}wysiwyg/email/logo-twitter.png"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a target="_blank" title="pinterest" href="https://www.pinterest.com/epelican1/"><span><img src="{{media url=""}}wysiwyg/email/logo-pinterest.png"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a target="_blank" title="google" href="https://plus.google.com/u/0/+Epelican/posts"><span><img src="{{media url=""}}wysiwyg/email/logo-googleplus.png"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a target="_blank" title="instagram" href="http://instagram.com/ePelican_"><span><img src="{{media url=""}}wysiwyg/email/logo-instagram.png"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a target="_blank" title="linkedin" href="https://ca.linkedin.com/company/epelican"><span><img src="{{media url=""}}wysiwyg/email/logo-linkedin.png"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <p id="templatecopyright" style="font-size: 14px;padding-top:15px;margin:0;">© 2015 ePelican.com. All rights reserved.</p>
+                    <p style="margin:0;padding-top:10px"><a style="font-size:15px;text-decoration:none;text-underline:none;color:#466e83;" href="https://www.epelican.com/">www.ePelican.com</a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</center>
+</body>

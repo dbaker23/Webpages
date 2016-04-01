@@ -1,0 +1,216 @@
+  /*overarching styles*/
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        font-size: 13px;
+        color: #000000;
+        text-decoration: none;   
+      }
+      form {
+        margin-top: 10px;
+        margin-bottom: 25px;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        width: auto;
+      }
+      .container {        
+        max-height: 100%;
+        font-family: 'Roboto', sans-serif;                
+        color: #ffffff;
+      }
+      #whiteTop {
+        margin: 0 auto;
+        width: 57%;        
+      }
+      #bluebg{
+        height: 90%;
+        background-color: #3a5795;
+        width: 100%;
+        margin-top: .5%;
+        padding-top: 1.5%;
+      }
+      #whitebot {
+        background-position: bottom;
+        height: 4.6%;
+        width: fill;
+        background-color: #ffffff;        
+      }
+
+  /*header styles*/
+      header {
+        margin: 0 auto;
+        height: 50px;            
+        font-weight: 300;
+        display: inline;        
+      }
+      header div {
+        display: inline-block;        
+      }
+      #headLeft {
+        float: left:;
+        text-align: left;
+        margin-left: 4.5%;
+        margin-top: .8%;
+        margin-right: 2.7%;
+      }      
+      #headRight {
+        float: right;
+        text-align: center; 
+        margin-right: 6%;
+        margin-top: .8%;
+      }
+      #pintLink a {
+
+      }
+      #pintWords {
+        max-width: 100%;
+        max-height: 100%;       
+      }
+
+    /*body styles*/
+      .blueBody {        
+        text-decoration: none;
+        height: 67%;
+        text-align: center;                        
+        margin-bottom: 2%;
+      }
+      #welcome {
+        text-align: center;
+        margin: 0 auto;
+        width: 90%;                   
+        font-size: 400%;        
+        font-weight: 400;         
+      }
+      #wereHere {
+        margin: 0 auto;
+        width: 48%;
+        line-height: 35px;     
+        font-size: 130%;
+        font-weight: 300;
+        padding-bottom: 1.4%;
+      }
+      #signUp {
+        font-weight: 300;
+        font-size: 160%;
+        margin-top: 2.8%;
+        margin-bottom: 1.5%;
+      }
+      #emailForm {        
+        width: 48%;
+        font-family: 'Roboto';
+        font-size: 212%;
+        color: #606060;
+        vertical-align: top;              
+      }
+      #subButton {
+        height: 1.75%;        
+      }
+      #whyWait {
+        font-weight: 300;
+        font-size: 140%;
+        margin-bottom: .5%;       
+      }
+      #getPaid {
+      }
+      #couponBox {
+        background: #ff6531; 
+        margin:8px 0 32px 0;
+        height:auto; 
+        font-size:20px; 
+        text-align:center; 
+        font-family: 'Roboto'; 
+        color:#fff; 
+        font-weight:700; 
+        float:left; 
+        line-height:35px; 
+        width: 100%;  
+        padding:5px;
+      }
+
+    /*footer styles*/
+      section {                                           
+        color: #000000;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+      }      
+      .greenchat-bx{ 
+        bottom:0px;
+        margin: 0;
+        padding: 0;
+        position: fixed !important;
+        left: 19px;
+        text-align: left;
+        z-index: 999;
+      }
+      #footMid {           
+        margin-top: 1%;             
+        text-align: center;        
+      }
+      #copyright {                
+        width: 40%;        
+        float: right;
+        margin-top: -.8%;
+        font-size: 100%;
+      }
+
+      @media( max-width: 768px ) {
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+        .container {
+          height: 71.3%;
+          width: 100%;
+        }
+        #whiteTop {
+          width: 100%;
+        }
+        #headLeft {          
+          height: auto;
+          width: auto;
+        }
+        
+        #footMid {
+          text-align: left;
+        }        
+        #welcome {
+          font-size: 45px;          
+        }
+        #wereHere {          
+          font-size: 20px;
+          line-height: 130%;
+          width: 80%;
+          margin-top: 10%;
+          margin-bottom: 3%;
+        }
+        .centered {
+          margin-left: 4.5%;
+          margin-right: 4.5%;
+          padding-top: 5%;
+        }
+        #emailForm {
+          width: 54%;
+          font-family: 'Roboto';
+          font-size: 212%;
+          color: #606060;
+          vertical-align: top;  
+        }
+        #signUp {
+        }
+        #footMid {
+          margin-left: 4.5%;
+        }
+        #copyright {
+          margin-top: -2.3%;
+          font-size: 70%;             
+        }
+        #couponBox {
+          margin-right: 4.5%;
+          padding: 0px;
+        }
+
+      }

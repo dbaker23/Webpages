@@ -1,0 +1,43 @@
+/*overall*/
+.container { /*width: 64.1%;*/ width: 63.1%; font-family: 'roboto';}
+.container .jumbotron {  border-radius: 0; }
+.jumbotron { text-align: center; margin: 0; font-family: 'roboto', sans-serif;}
+.container .jumbotron, .container-fluid .jumbotron { padding-left: 0; padding-right: 0; }
+.row { margin: 0; margin-left: 8.3%; margin-right: 8.3%; }
+.img-responsive { display: inline-block; vertical-align: top; }
+hr { border: 1px solid; margin-top: 40px; margin-bottom: 40px; overflow: hidden; color: #48a7a1; }
+ul { font-size: 18px; color: #35404f; padding: 5px 0 0 16px; line-height: 24px; }
+li { font-size: 15px;  }
+.btn { width: 150px; height: 35px; color: #ffffff; text-transform: uppercase; border: none; }
+
+/*defined classes*/
+.noPadding { padding: 0; }
+.alignCenter { text-align: center; }
+.iconMargin { margin-bottom: 40px; }
+.darkBlue { color: #35404f; }
+
+/*Header*/
+#headerTop { background-color: #35404f; }
+#headerBot { background-color: #9fcf96; }
+	#headerLeftColumn { width: 51%; margin: 0 5.4% 0 0; }
+		#youtubeVid { float: left; }
+	#headerRightColumn { width: 37.7%; margin: 0; }
+		#mainHeader {  font-weight: 600; font-size: 40px; }
+		h3 { font-size: 20px; font-weight: 800; color: #ffffff; margin: 15px 0 15px 0; }
+		#phoneNumberInput { margin-bottom: 15px; }
+			.form-control { padding: 20px 12px; }
+		#getStartedButton { width: 100%; height: 59px; background-color: #f7931d; font-size: 24px; font-weight: 600;  }
+
+/*main*/
+#mainContainer { margin-top: 40px; background-color: #ffffff;}
+	h2 { font-family: 'roboto'; font-weight: 300; font-size: 35px; color: #35404f; margin: 0 0 15px 0; }
+	h4 { font-family: 'roboto'; font-size: 18px; font-weight: 800; color: #48a7a1; margin: 0; }
+	p { font-size: 15px; color: #35404f; }
+		#underHeaderText { margin-left: 10px; }
+	#headerShortMarginBottom { margin-bottom: 20px; }
+	#introducingImage {  }
+	#headerBoldBottom { color: #35404f; }
+	#footerList { padding-left: 20px;}
+	#teal { background-color: #48a7a1; }
+	#green { background-color: #9fcf96; }
+	#orange { background-color: #f7931d; }
